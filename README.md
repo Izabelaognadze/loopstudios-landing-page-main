@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-## Deploying your project
+## Deploying My project
 
 - [Link](https://izabelaognadze.github.io/loopstudios-landing-page-main/)
 
@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link](https://github.com/Izabelaognadze/loopstudios-landing-page-main)
+- Solution URL on Github: [Link](https://github.com/Izabelaognadze/loopstudios-landing-page-main)
 - Live Site URL: [Link](https://izabelaognadze.github.io/loopstudios-landing-page-main/)
 
 ## My process
