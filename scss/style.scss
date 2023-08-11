@@ -1,5 +1,6 @@
-@import "base/hamburger";
-@import "base/reset";
-@import "base/middle";
-@import "base/rootsec";
-@import "base/root";
+@use "base/hamburger";
+@use "base/middle";
+@use "base/minScreen";
+@use "base/reset";
+@use "base/sectionOne";
+@use "base/sectionTwo";

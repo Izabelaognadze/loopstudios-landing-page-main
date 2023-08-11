@@ -19,7 +19,6 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -27,7 +26,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 Thanks for checking out this front-end coding challenge.
 
-**To do this challenge, I need a good understanding of HTML, SASS and a basic understanding of JavaScript.**
+**To do this challenge, You need a good understanding of HTML, SASS and a basic understanding of JavaScript.**
 
 ### The challenge
 My challenge was to build out this landing page and get it looking as close to the design as possible.
@@ -54,35 +53,16 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
+- Javascript
 - [Styled Components](https://styled-components.com/) - For styles
-
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
 
 ### Useful resources
 
-- [Link](https://www.youtube.com/watch?v=gCi47hi6oAw&list=LL&index=8) - This helped me for .about class. I liked this style more than mine so i wtote the class as its in tutorial.
+- [youtube link](https://www.youtube.com/watch?v=gCi47hi6oAw&list=LL&index=8) 
+- [getbem](https://getbem.com/) 
+- [media queries](https://dev.to/paul_duvall/sass-and-media-queries-hb2#:~:text=Sass%20and%20media%20queries%20With%20Sass%2C%20it%20is,particular%20rule%20is%20located%20in%20the%20same%20place) 
+
 
 ## Author
 

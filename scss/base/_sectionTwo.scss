@@ -1,24 +1,4 @@
-:root {
-    --crl-White: hsl(0, 0%, 100%);
-    --crl-Black: hsl(0, 0%, 0%);
-    --crl-Dark-Gray: hsl(0, 0%, 55%);
-    --crl-Very-Dark-Gray: hsl(0, 0%, 41%);
-    --fs: 15px;
-    --font-family-400: 'Alata', sans-serif;
-    --font-family-300: 'Josefin Sans', sans-serif;
-    --font-weight-alata-400: 400;
-    --font-weight-josefin-300: 300;
-
-    --padding-sec-desktop: 8.5rem;
-    --padding-sec-tab: 2rem;
-    --padding-sec-mobile: 0.5rem;
-}
-
-@mixin sz($size) {
-    @media only screen and (min-width: $size) {
-        @content;
-    }
-}
+@use "root";
 
 .burger {
     background-color: black;
@@ -86,14 +66,14 @@
     max-width: 420px;
 }
 
-@include sz(60em) {
+@include minScreen(60em) {
     .header__box {
         max-width: 50%;
     }
 
 }
 
-@include sz(1440px) {
+@include minScreen(1440px) {
     .header__box {
         max-width: 35%;
     }
@@ -134,10 +114,10 @@ body {
     position: relative;
     height: 800px;
     padding: 2rem var(--padding-sec-mobile);
-    color: var(--crl-White);
+    color: var(--clr-White);
 }
 
-@include sz(60em) {
+@include minScreen(960px) {
     .top {
         background: url(../../images/mobile/image-hero.jpg) center /cover no-repeat;
         padding: 2rem var(--padding-sec-tab);
@@ -173,7 +153,7 @@ body {
     }
 }
 
-@include sz(1440px) {
+@include minScreen(1440px) {
     .top {
         background: url(../../images/mobile/image-hero.jpg) center /cover no-repeat;
         padding: 2rem var(--padding-sec-desktop);

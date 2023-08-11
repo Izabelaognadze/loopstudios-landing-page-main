@@ -1,12 +1,3 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 /* Box sizing rules */
 *,
 *::before,
@@ -80,27 +71,4 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-}
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-li {
-    list-style: none;
-}
-
-ul {
-    padding: 0;
-}
-
-a {
-    color: var(--crl-White);
-    text-decoration: none;
-    padding: 0;
 }

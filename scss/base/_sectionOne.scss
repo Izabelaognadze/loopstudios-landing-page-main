@@ -1,0 +1,229 @@
+@use "root";
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    color: var(--clr-White);
+    text-decoration: none;
+    padding: 0;
+}
+
+.main-paragraph {
+    color: var(--clr-Very-Dark-Gray);
+    font-weight: bold;
+    white-space: normal;
+    line-height: 1.8em;
+    height: 7em;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.block-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-wraper-header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.btn {
+    background-color: white;
+    border: 1;
+    border-color: black;
+    border-style: solid;
+    min-width: 7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0.4rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn:hover {
+    background-color: var(--clr-Black);
+    color: var(--clr-White);
+}
+
+.desktop {
+    display: none;
+}
+
+.length {
+    width: 100%;
+}
+
+
+.block-wrapper-list {
+    display: flex;
+    padding: 0 var(--padding-mobile);
+    text-transform: uppercase;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+
+    .item {
+        position: relative;
+    }
+
+    .item:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .wrap-text {
+        position: absolute;
+        z-index: 1;
+        opacity: 0.8;
+        bottom: 10%;
+        padding-left: 1.5rem;
+        color: var(--clr-White);
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.footer {
+    background-color: var(--clr-Black);
+    color: var(--clr-White);
+    padding: 0 var(--padding-mobile);
+    font-family: var(--font-family-400);
+    font-weight: var(--font-weight-alata-400);
+    text-align: center;
+
+    .footer-header {
+        text-transform: lowercase;
+        padding: 2.5rem 0 0.5rem;
+    }
+
+    .footer-nav__menu {
+        line-height: 2.5rem;
+    }
+
+    .other-links {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 2.5rem 0 0.5rem;
+    }
+
+    .rights {
+        font-family: var(--font-family-300);
+        font-weight: var(--font-weight-josefin-300);
+        padding: 1rem 0 3rem;
+        opacity: 0.6;
+    }
+
+}
+
+@include minScreen(640px) {
+
+    .block-wrapper {
+        display: grid;
+        padding: 0 var(--padding-desktop);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 2fr;
+    }
+
+    .block-wraper-header {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-transform: uppercase;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .block-wrapper-list {
+        grid-column: 1/3;
+        grid-row: 2/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .btn-div {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-bottom: 0;
+    }
+
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .footer {
+        display: grid;
+        padding: 0 var(--padding-desktop);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer h1:nth-of-type(1) {
+        order: 1;
+        text-align: left;
+    }
+
+    .footer ul:nth-of-type(1) {
+        order: 3;
+        display: flex;
+
+        li {
+            margin-right: 1.5rem;
+        }
+    }
+
+    .footer div:nth-of-type(1) {
+        order: 2;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .footer p:nth-of-type(1) {
+        order: 4;
+        text-align: end;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@include minScreen(1440px) {
+    .footer {
+        padding: 0 8rem;
+    }
+
+    .block-wrapper {
+        padding: 0 8rem;
+    }
+}

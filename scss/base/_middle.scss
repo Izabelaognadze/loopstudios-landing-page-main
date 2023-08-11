@@ -1,14 +1,4 @@
-:root {
-    --padding-mid-desktop: 8.5rem;
-    --padding-mid-tab: 2rem;
-    --padding-mid-mobile: 0.5rem;
-}
-
-@mixin ka($size) {
-    @media only screen and (min-width: $size) {
-        @content;
-    }
-}
+@use "root";
 
 .product {
     display: var(--hamburger-enabled-display, block);
@@ -39,14 +29,14 @@
         }
 
         p {
-            color: var(--crl-Very-Dark-Gray);
+            color: var(--clr-Very-Dark-Gray);
             line-height: 1.5;
         }
     }
 }
 
 
-@include ka(60em) {
+@include minScreen(960px) {
     .about {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -72,7 +62,7 @@
     }
 }
 
-@include ka(1440px) {
+@include minScreen(1440px) {
     .about {
         position: relative;
         padding: 8rem var(--padding-mid-desktop);
