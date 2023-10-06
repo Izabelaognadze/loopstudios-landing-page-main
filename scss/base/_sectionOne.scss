@@ -1,8 +1,4 @@
 @use "root";
-<<<<<<< HEAD
-=======
-@use "minScreen";
->>>>>>> 60b494b (update)
 
 li {
     list-style: none;
@@ -67,7 +63,6 @@ a {
 
 .desktop {
     display: none;
-<<<<<<< HEAD
 }
 
 .length {
@@ -75,10 +70,6 @@ a {
 }
 
 
-=======
-    width: 100%;
-}
->>>>>>> 60b494b (update)
 .block-wrapper-list {
     display: flex;
     padding: 0 var(--padding-mobile);
@@ -180,23 +171,11 @@ a {
 
     .desktop {
         display: block;
-<<<<<<< HEAD
-=======
-        width: 100%;
->>>>>>> 60b494b (update)
     }
 
     .mobile {
         display: none;
     }
-<<<<<<< HEAD
-
-=======
-    .length{
-        width: 100%;
-    }
-    
->>>>>>> 60b494b (update)
     .footer {
         display: grid;
         padding: 0 var(--padding-desktop);

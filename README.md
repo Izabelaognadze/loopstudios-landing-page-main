@@ -13,22 +13,13 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-<<<<<<< HEAD
-  - [Useful resources](#useful-resources)
-=======
   - [Start The App](#start-the-app)
->>>>>>> 60b494b (update)
 - [Author](#author)
 
 ## Overview
 
 Thanks for checking out this front-end coding challenge.
 
-<<<<<<< HEAD
-**To do this challenge, You need a good understanding of HTML, SASS and a basic understanding of JavaScript.**
-
-=======
->>>>>>> 60b494b (update)
 ### The challenge
 
 My challenge was to build out this landing page and get it looking as close to the design as possible.
@@ -59,18 +50,9 @@ Users should be able to:
 
 ### Start The App
 
-<<<<<<< HEAD
-### Useful resources
-
-- [youtube link](https://www.youtube.com/watch?v=gCi47hi6oAw&list=LL&index=8) 
-- [getbem](https://getbem.com/) 
-- [media queries](https://dev.to/paul_duvall/sass-and-media-queries-hb2#:~:text=Sass%20and%20media%20queries%20With%20Sass%2C%20it%20is,particular%20rule%20is%20located%20in%20the%20same%20place) 
-
-=======
 ```bash
 sass --watch scss/style.scss dist/css/style.css
 ```
->>>>>>> 60b494b (update)
 
 ## Author
 
