@@ -22,11 +22,13 @@
     line-height: 1.9;
     font-family: var(--font-family-300);
     font-weight: var(--font-weight-josefin-300);
+    padding: 0 var(--padding-mobile);
     text-transform: uppercase;
 }
 
 .burger__header {
     display: flex;
+    padding: 2rem var(--padding-mobile);
     justify-content: space-between;
     align-items: center;
 }
@@ -55,6 +57,7 @@
 .header__box {
     display: flex;
     align-items: center;
+    padding: 0 var(--padding-mobile);
     height: 600px;
 }
 
@@ -114,14 +117,14 @@ body {
     background: url(../../images/mobile/image-hero.jpg) center /cover no-repeat;
     position: relative;
     height: 800px;
-    padding: 2rem var(--padding-sec-mobile);
+    padding: 2rem var(--padding-mobile);
     color: var(--clr-White);
 }
 
 @include minScreen(960px) {
     .top {
         background: url(../../images/mobile/image-hero.jpg) center /cover no-repeat;
-        padding: 2rem var(--padding-sec-tab);
+        padding: 2rem var(--padding-desktop);
         position: relative;
     }
 
