@@ -1,11 +1,12 @@
 @use "root";
+@use "minScreen" as *;
 
 .product {
     display: var(--hamburger-enabled-display, block);
 }
 
 .about {
-    padding: 4rem var(--padding-mid-mobile) 4rem;
+    padding: 4rem var(--padding-mobile);
     text-align: center;
 
     .img-box {
@@ -29,18 +30,18 @@
         }
 
         p {
-            color: var(--clr-Very-Dark-Gray);
+            color: var(--crl-Very-Dark-Gray);
             line-height: 1.5;
         }
     }
 }
 
 
-@include minScreen(960px) {
+@include minScreen(60em) {
     .about {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        padding: 5rem var(--padding-mid-tab);
+        padding: 5rem var(--padding-desktop);
         position: relative;
 
         .content-box {
@@ -65,7 +66,7 @@
 @include minScreen(1440px) {
     .about {
         position: relative;
-        padding: 8rem var(--padding-mid-desktop);
+        padding: 8rem var(--padding-sec-desktop);
 
         .content-box {
             padding: 5% 0 5% 5%;
